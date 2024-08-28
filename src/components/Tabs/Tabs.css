@@ -1,0 +1,22 @@
+@import url('./../headerStyle.css');
+@layer components{
+    .wrapper{
+        @apply flex justify-center items-center flex-col
+        [&_header]:w-full
+        [&_header]:flex
+        [&_header]:h-10
+        [&_header_div]:flex-grow
+        [&_header_div]:text-center
+        [&_header_div]:cursor-pointer
+        [&_header_div]:leading-[40px]
+        [&_header_div]:border
+        [&_header_div]:border-transparent
+        hover:[&_header_div]:border-slate-300
+        [&_article]:w-full
+        [&_article]:pt-8
+        
+    }
+    .selected{
+        @apply bg-slate-700 text-white
+    }
+}

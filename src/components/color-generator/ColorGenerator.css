@@ -1,0 +1,29 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components{
+    .color-generator{
+        @apply py-5 flex flex-col items-center justify-start w-[100vw] h-[100vh] bg-slate-50 border-b-2
+        /* [&_.buttons]:bg-slate-100 */
+        [&_.buttons]:py-2
+        [&_.buttons]:flex
+        [&_.buttons]:w-screen
+        [&_.buttons]:justify-around
+        [&_.buttons]:items-center
+        [&_button]:bg-slate-600
+        [&_button]:font-semibold
+        [&_button]:px-2
+        [&_button]:rounded
+        [&_button]:text-gray-50
+        [&_label]:block
+        [&_label]:flex-1
+        [&_label]:text-3xl
+        [&_label]:font-bold
+        [&_label]:pt-10
+        [&_label]:text-center
+    }
+    .enabled{
+        @apply !bg-slate-200 pointer-events-none 
+    }
+}

@@ -1,0 +1,13 @@
+@import url('./../headerStyle.css');
+@layer components{
+    .darck-light-mode{
+        @apply dark:bg-slate-950 pb-3
+        dark:[&_h1]:text-white
+        dark:[&_h1]:border-slate-200
+        [&_section]:flex 
+        [&_section]:items-center 
+        [&_section]:justify-center 
+        [&_section]:pt-4
+        dark:[&_.toggle-btn]:accent-white
+    }
+}

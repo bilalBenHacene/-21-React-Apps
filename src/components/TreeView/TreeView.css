@@ -1,0 +1,26 @@
+@import url("./../headerStyle.css");
+
+
+@layer components{
+    .tree-view{
+        @apply p-0 h-[100vh]
+        [&_menu]:w-[20rem]
+        [&_menu]:h-full
+        [&_menu]:bg-violet-500
+        [&_.menu-list]:text-white
+        [&_.menu-list]:w-full
+        [&_.menu-list]:pl-3
+        [&_.menu-list]:py-2
+        [&_.menu-item]:cursor-pointer
+        [&_.menu-item]:min-w-[5rem]
+        [&_.menu-item_.header]:flex
+        [&_.menu-item_.header]:items-center
+        [&_.menu-item_.header]:justify-between
+       hover:[&_.header:has(+_.children)]:bg-violet-400
+        [&_.menu-item_.children]:pl-3
+        [&_.menu-item_.children]:w-full
+        [&_.closed]:h-0
+        [&_.closed]:overflow-hidden
+        [&_.toggle-button]:pr-2
+    }
+}

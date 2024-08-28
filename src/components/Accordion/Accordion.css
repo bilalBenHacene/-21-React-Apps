@@ -1,0 +1,26 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+    .accordion {
+      @apply bg-zinc-50 py-2 rounded p-3 border-b-2
+      [&_.accordion-item]:bg-slate-200
+      [&_.accordion-item]:p-2
+      [&_.accordion-item]:rounded
+      [&_.accordion-item]:mb-2
+      [&_.accordion-item]:italic
+      [&_button]:rounded
+      [&_button]:py-1
+      [&_button]:px-3
+      [&_button]:mb-2
+      [&_button]:text-white
+      [&_h3]:font-bold
+      [&_h3]:p-2
+      [&_h3]:flex
+      [&_h3]:justify-between
+      [&_h3]:items-center
+      [&_h3]:cursor-pointer
+      hover:[&_h3_span:first-of-type]:underline
+    }
+  }

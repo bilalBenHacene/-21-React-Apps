@@ -1,0 +1,23 @@
+@import url('./../headerStyle.css');
+
+@layer components{
+    .qr-code-generator{
+        @apply [&_:is(section,.qr-input-value)]:flex 
+        [&_section]:pt-3
+        [&_section]:flex-col 
+        [&_:is(section,.qr-input-value)]:items-center 
+        [&_:is(section,.qr-input-value)]:justify-center
+        [&_.qr-input-value]:gap-x-4
+        [&_.qr-input-value_:is(input,button)]:px-3
+        [&_.qr-input-value_:is(input,button)]:py-1
+        [&_.qr-input-value_:is(input,button)]:rounded
+        [&_.qr-input-value_input]:outline-none
+        [&_.qr-input-value_button]:outline-green-300
+        [&_.qr-input-value_button]:bg-green-500
+        [&_.qr-input-value_button]:text-white
+        [&_.qr-input-value_button[disabled]]:text-slate-300
+        [&_.qr-input-value_button[disabled]]:bg-slate-100
+        [&_.qr-input-value_button[disabled]]:pointer-events-none
+        
+    }
+}

@@ -1,0 +1,6 @@
+@import url('./../headerStyle.css');
+@layer components{
+    .fixed{
+        @apply w-full h-4 left-0 top-0
+    }
+}

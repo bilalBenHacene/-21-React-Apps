@@ -1,0 +1,48 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components{
+    .image-slider{
+        @apply w-full text-center h-screen py-4 px-3  relative
+        [&_.arrow-container]:absolute
+        [&_.arrow-container]:w-full
+        [&_.arrow-container]:flex
+        [&_.arrow-container]:items-center
+        [&_.arrow-container]:justify-between
+        [&_.arrow-container]:px-4
+        [&_.arrow]:fill-white
+        hover:[&_.arrow]:cursor-pointer
+        hover:[&_.arrow]:scale-150
+        hover:[&_.arrow]:transition
+        [&_.slider]:w-full
+        [&_.slider]:h-[15rem]
+        [&_.slider]:overflow-hidden
+        [&_.slider]:rounded-md
+        [&_.slider]:relative
+        [&_.slider]:flex
+        [&_.slider]:flex-wrap
+        [&_img]:object-cover
+        [&_img]:h-full
+        [&_img]:w-full
+        [&_img.selected]:order-1
+        [&_img.hide]:hidden
+        [&_.dot]:inline-block
+        [&_.dot]:h-3
+        [&_.dot]:w-3
+        [&_.dot]:rounded-full
+        [&_.dot]:cursor-pointer
+        hover:[&_.dot]:scale-150
+        hover:[&_.dot]:bg-slate-300
+        [&_.dot]:bg-slate-400
+        [&_.dots]:absolute
+        [&_.dots]:z-10
+        [&_.dots]:pb-2
+        [&_.dots]:flex
+        [&_.dots]:items-center
+        [&_.dots]:justify-center
+        [&_.dots]:gap-x-2
+        [&_.selected]:!bg-white
+
+    }
+}

@@ -1,0 +1,7 @@
+@import url('./../headerStyle.css');
+@layer components{
+    .search-form{
+        @apply relative z-0 w-full mb-5
+    }
+   
+}

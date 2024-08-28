@@ -1,0 +1,24 @@
+@import url('./../headerStyle.css');
+@layer components{
+    .modal-popup{
+        @apply flex w-full flex-col gap-y-10
+    }
+    button{
+        @apply text-center m-auto bg-blue-500 hover:bg-blue-400 p-4 rounded-md text-white
+    }
+    .popup{
+        @apply   fixed left-0 top-0 bottom-0 right-0 z-10 bg-slate-50 flex
+        [&_.popup-content]:border
+        [&_.popup-content]:rounded-md 
+        [&_.popup-content]:flex 
+        [&_.popup-content]:flex-col 
+        [&_.popup-content]:items-center 
+        [&_.popup-content]:justify-center 
+        [&_.popup-content]:w-1/2 
+        [&_.popup-content]:m-auto
+        [&_.popup-content]:h-[200px]
+        [&_main]:flex-grow
+        [&_main]:py-3
+
+    }
+}

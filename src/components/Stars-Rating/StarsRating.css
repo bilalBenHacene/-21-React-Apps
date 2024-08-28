@@ -1,0 +1,10 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components{
+    .stars-rating{
+        @apply py-5 flex flex-col items-center justify-start w-[100vw] h-[100vh] border-b-2
+        [&_.rate]:fill-yellow-400
+    }
+}

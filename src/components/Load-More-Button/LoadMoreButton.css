@@ -1,0 +1,33 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components{
+    .load-more-button{
+        @apply border-t-2 pt-2 flex flex-col items-center justify-center
+        [&_.button]:cursor-pointer
+        [&_.button]:bg-blue-400
+        hover:[&_.button]:bg-blue-300
+        [&_.button]:rounded
+        [&_.button]:py-1
+        [&_.button]:px-4
+        [&_.button]:mt-2
+        [&_.button]:font-semibold
+        [&_.products-container]:grid
+        [&_.products-container]:p-2
+        [&_.products-container]:grid-cols-2
+        [&_.products-container]:gap-4
+        md:[&_.products-container]:grid-cols-3
+        [&_.product]:h-[10rem]
+        [&_.product]:w-full
+        [&_.product]:border
+        [&_.product]:overflow-hidden
+        [&_.product]:rounded
+        [&_.product]:flex
+        [&_.product]:flex-col
+        [&_.product]:text-center
+        [&_.product_img]:w-full
+        [&_.product_img]:h-2/3
+        [&_.product_img]:object-contain
+    }
+}
