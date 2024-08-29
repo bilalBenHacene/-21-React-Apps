@@ -22,6 +22,7 @@ import UseOutsideClickHookTest from "./components/UseOutsideClick-Costum-Hook/us
 import UseWindowResizeHookTest from "./components/useWindowResize-useResponsive-hook/UseWindowResize-Hook-Test";
 import ScrollToTopBottom from "./components/Scroll-To-Top-Bottom/Scroll-To-Top-Bottom";
 import ScrollToParticularSection from "./components/Scroll-To-Particular-Section/Scroll-To-Particular-Section";
+import WeatherApp from "./components/Weather-App/Weather-App";
 
 function App() {
   const [toggleDarck, setToggleDarck] = useState(false);
@@ -88,7 +89,10 @@ function App() {
       {/* <ScrollToTopBottom /> */}
 
       {/* scroll to particular section */}
-      <ScrollToParticularSection />
+      {/* <ScrollToParticularSection /> */}
+
+      {/* weather app */}
+      <WeatherApp />
     </div>
   );
 }
