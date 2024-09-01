@@ -5,7 +5,7 @@ const SearchBar = ({ search, setSearch, handleSearch }) => {
     return (
         <div className="search-area relative w-full max-w-xs mx-auto mt-20">
             <input
-                className="w-full py-2 px-4 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full py-2 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                 type="search"
                 placeholder="Enter city name ..."
                 value={search}
